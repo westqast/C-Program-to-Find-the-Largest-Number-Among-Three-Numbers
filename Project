@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+void logo()
+{
+    printf("===================******************==============  * * *  * * *   ============\n");
+    printf("*                                                   *      *      *            *\n");
+    printf("*                                                     *         *              *\n");
+    printf("*                    HELLO THERE                         *    *                *\n");
+    printf("*                                                          *                   *\n");
+    printf("===================******************===========================================\n");
+}
+
+int main() {
+  logo();
+  int NumberOne, NumberTwo, NumberThree;
+
+  printf("Enter three integers numbers: ");
+  scanf("%d %d %d", &NumberOne, &NumberTwo, &NumberThree);
+
+  // if numberOne is greater than both numberTwo and numberThree, numberOne is the largest
+  if(NumberOne >= NumberTwo && NumberOne>= NumberThree)
+    printf("%d is the largest number.", NumberOne);
+
+  // if numberTwo is greater than both numberOne and numberTwo, numberTwo is the largest
+  else if (NumberTwo >= NumberOne && NumberTwo >= NumberThree)
+    printf("%d is the largest number.", NumberTwo);
+
+  // if numberThree is greater than both numberOne and numberTwo , numberThree is the largest
+  else
+    printf("%d is the largest number.", NumberThree);
+
+  return 0;
+}
